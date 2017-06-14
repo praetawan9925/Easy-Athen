@@ -52,6 +52,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg5-IU-m3B"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-WR-Hp4">
                                 <rect key="frame" x="265" y="266" width="56" height="27"/>
@@ -80,6 +83,11 @@
                             <constraint firstItem="7f2-6v-Zyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zfz-Xj-yEh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="hvp-WR-Hp4" id="EvZ-eD-yKI"/>
+                        <outlet property="passwordTextField" destination="j57-c4-2Gv" id="bS3-nU-Qj0"/>
+                        <outlet property="userTextField" destination="tuB-64-pkM" id="QkL-ss-Gbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
