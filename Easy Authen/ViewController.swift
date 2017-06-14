@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     // Implicit
     var strUser: String?  //ถ้าประกาศตัวแปร แบบนี้เป็นการไม่กำหนดค่าเริ่มต้นให้มัน
     var strPassword: String?  //ถ้าประกาศตัวแปร แบบนี้เป็นการไม่กำหนดค่าเริ่มต้นให้มัน
-    
+    let dicUser = ["master": "1234", "doramon": "5678", "nobita": "1234"]
     
     
     
@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
+     messageLabel.text = ""
+        
  // ฉันจะทำการดึงข้อมูลจากเท็กฟิลด์
         strUser = userTextField.text
         strPassword = passwordTextField.text
@@ -47,11 +49,21 @@ class ViewController: UIViewController {
         print("intPass ==> \(intPass!)")
         
         // Call chackspace
-        if checkSpace(myString: strUser!) {
-            print("user OK")
+        if checkSpace(myString: strUser!) && checkSpace(myString: strPassword!){
+            
+            // No space
+            print("No Space")
+            showMessage(strMessage: "User and Password OK")
+            checkUserAndPass(strUser: strUser!, strPassword: strPassword!)
         }   else {
-            print("Blank User")
+            
+            //Have space
+            print("Have Space")
+            showMessage(strMessage: "Please fill Every Bank")
         }
+        
+        
+        
         
         
     }//loginButton
@@ -63,8 +75,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     } //Main Method คือ เมธอดแรกในการทำงาน 
+    func checkUserAndPass(strUser: String, strPassword: String) -> Void {
+        
+        //Check User
+        if let testUser = dicUser[strUser] {
+            print("testUser ==> \(testUser)")
+        } else {
+          print("testUser nil")
+          showMessage(strMessage: "No" + strUser + "in my database")
+        }
+    }
     
+    
+    func showMessage(strMessage: String) -> Void {
+        messageLabel.text = strMessage
+    }
     
     func checkSpace(myString: String) -> Bool {
         let intString = myString.characters.count
@@ -78,7 +105,7 @@ class ViewController: UIViewController {
         
         
         
-        return true
+        return result
         
     }
     
@@ -91,6 +118,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }  //ตัวจัดการหน่วยความจำ
 
+    
+    
 
 } //Main  Class
 
