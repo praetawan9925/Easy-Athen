@@ -45,7 +45,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8S-DI-Ch3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8S-DI-Ch3">
                                 <rect key="frame" x="260" y="228" width="56" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -56,8 +56,8 @@
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg5-IU-m3B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-WR-Hp4">
-                                <rect key="frame" x="265" y="266" width="56" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-WR-Hp4">
+                                <rect key="frame" x="260" y="266" width="56" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +66,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="j57-c4-2Gv" secondAttribute="trailing" constant="87" id="0oX-gc-mQC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hvp-WR-Hp4" secondAttribute="trailing" constant="38" id="1gw-8g-civ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tuB-64-pkM" secondAttribute="trailing" constant="87" id="EjN-PM-oev"/>
                             <constraint firstItem="j57-c4-2Gv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="GL9-rw-Abr"/>
                             <constraint firstItem="hvp-WR-Hp4" firstAttribute="top" secondItem="s8S-DI-Ch3" secondAttribute="bottom" constant="13" id="InA-vH-WWZ"/>
@@ -73,12 +74,17 @@
                             <constraint firstItem="tuB-64-pkM" firstAttribute="top" secondItem="ef4-c2-eqR" secondAttribute="bottom" constant="42.5" id="MfP-gU-NVQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hvp-WR-Hp4" secondAttribute="trailing" constant="43" id="NVZ-xz-Ulc"/>
                             <constraint firstItem="ef4-c2-eqR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QHT-Mk-ZIe"/>
+                            <constraint firstItem="hvp-WR-Hp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="249" id="Qlf-JH-qQG"/>
                             <constraint firstAttribute="trailing" secondItem="7f2-6v-Zyk" secondAttribute="trailing" id="WVk-PC-yIA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ef4-c2-eqR" secondAttribute="trailing" constant="118" id="WYW-Ts-tVt"/>
                             <constraint firstItem="hvp-WR-Hp4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="244" id="b4F-Hx-not"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s8S-DI-Ch3" secondAttribute="trailing" constant="43" id="ecD-cX-2RO"/>
                             <constraint firstItem="j57-c4-2Gv" firstAttribute="top" secondItem="tuB-64-pkM" secondAttribute="bottom" constant="22" id="epW-vN-r3x"/>
+                            <constraint firstItem="hvp-WR-Hp4" firstAttribute="top" secondItem="s8S-DI-Ch3" secondAttribute="bottom" constant="8" id="h9m-ia-Ppr"/>
                             <constraint firstItem="tuB-64-pkM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="kp3-JP-ugb"/>
                             <constraint firstItem="7f2-6v-Zyk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ros-lr-HQB"/>
+                            <constraint firstItem="s8S-DI-Ch3" firstAttribute="top" secondItem="j57-c4-2Gv" secondAttribute="bottom" constant="32" id="rue-Ny-fpR"/>
+                            <constraint firstItem="s8S-DI-Ch3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="244" id="u9k-8h-7OZ"/>
                             <constraint firstItem="ef4-c2-eqR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="118" id="yq0-Kc-vGk"/>
                             <constraint firstItem="7f2-6v-Zyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zfz-Xj-yEh"/>
                         </constraints>
